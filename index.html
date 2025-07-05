@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <title>Gerenciador de tarefas DNC</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Board de tarefas</h1>
+        <!--adicionar tasks -->
+        <form id="formTask">
+            <input id="name" type="text" placeholder="Nome da tarefa" required>
+            <input id="description" type="text" placeholder="Etiqueta">
+            <button type="submit">+</button>
+        </form>
+        <!--trabalhar listas e formulários-->
+        <ul id="listTask">
+        </ul>
+        <!--Incremento de tarefas concluídas-->
+        <footer>
+            <span id="countTask">0 tarefa concluída</span>
+        </footer>
+    </main>
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
